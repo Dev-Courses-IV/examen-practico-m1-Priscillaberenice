@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Students list</h1>
-    <!-- <ul id="studentsList" class="grid grid-cols-4 gap-4 m-10"></ul> -->
-    <button
-      class="bg-lime-800 hover:bg-lime-700 px-4 py-1 rounded-lg text-white"
-      id="printButton"
-    >
-      Print students
-    </button>
+    <h1 class="text-3xl font-bold" id="title">👩‍🏫STUDENTS LIST👨‍🏫</h1>
+    <div class="flex flex-col gap-4 items-center"> 
+    <ul id="studentsList" class="grid grid-cols-3 gap-4 justify-between hover:bg-amber-50 hover:text-rose-300 hover:border-rose-300 border rounded-lg px-6 py-6 mt-10 text-center border-slate-200 text-rose-950 bg-white shadow-lg shadow-rose-950 hover:shadow-sm opacity-75 hover:opacity-100"></ul>
+        <button
+        class= "hover:bg-amber-50 hover:text-rose-300 hover:border-rose-300 border border-slate-200 text-rose-900 bg-white shadow-lg shadow-rose-950 hover:shadow-sm opacity-75 hover:opacity-100 px-2 py-2 rounded-lg"
+        id="printButton"
+      >
+        Print students
+      </button>
+    </div>
   <script src="index.js"></script>
 </body>
 </html>

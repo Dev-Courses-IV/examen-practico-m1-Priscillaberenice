@@ -1,3 +1,6 @@
+const printButton = document.getElementById('printButton')
+const studentsList = document.getElementById('studentsList')
+
 const students = [
     { name: "Laura", age: 22, email: "laura@email.com" },
     { name: "Anna", age: 21, email: "anna@email.com" },
@@ -15,3 +18,17 @@ const students = [
     { name: "Constanza", age: 28, email: "constanza@email.com" },
   ];
   
+printButton.addEventListener("click", showStudents);
+
+ function showStudents(){
+  students.map(e => {
+    const student = document.createElement("li");
+    student.innerHTML = `Name: ${e.name}, Age: ${e.age}`;
+    studentsList.appendChild(student);
+  });
+ }
+
+
+
+title.classList.add('text-center', 'text-rose-300', 'mt-10');
+printButton.classList.add('text-rose-950', 'mt-10');
